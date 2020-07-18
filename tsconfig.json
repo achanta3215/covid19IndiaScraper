@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "sourceMap": false,
+    "experimentalDecorators": true,
+    "newLine": "LF",
+    "allowJs": true,
+    "checkJs": true,
+    "noEmit": true
+  },
+  "exclude": ["node_modules/**"]
+}

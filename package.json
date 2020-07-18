@@ -1,0 +1,24 @@
+{
+  "name": "covid19-scrapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "./app.js",
+    "tsc": "tsc",
+    "prettier": "prettier --write ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.4",
+    "@types/puppeteer": "^3.0.1",
+    "jest": "26.0.0",
+    "typescript": "3.9.6",
+    "prettier": "2.0.5"
+  }
+}

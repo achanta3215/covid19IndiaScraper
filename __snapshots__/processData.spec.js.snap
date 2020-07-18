@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Processes input correctly Appends statsObj for the next day when previous day has delta 1`] = `
+Object {
+  "7172020": Object {
+    "Andaman and Nicobar Islands": Object {
+      "active": "46",
+      "deceased": "0",
+      "discharged": "130",
+      "state": "Andaman and Nicobar Islands",
+      "total": "176",
+    },
+    "Andhra Pradesh": Object {
+      "active": "16621",
+      "deceased": "452",
+      "discharged": "18378",
+      "state": "Andhra Pradesh",
+      "total": "35451",
+    },
+  },
+  "7182020": Object {
+    "Andaman and Nicobar Islands": Object {
+      "active": "96",
+      "deceased": "5",
+      "delta": Object {
+        "active": "50",
+        "deceased": "5",
+        "discharged": "20",
+        "state": "Andaman and Nicobar Islands",
+        "total": "50",
+      },
+      "discharged": "150",
+      "state": "Andaman and Nicobar Islands",
+      "total": "226",
+    },
+    "Andhra Pradesh": Object {
+      "active": "16671",
+      "deceased": "457",
+      "delta": Object {
+        "active": "50",
+        "deceased": "5",
+        "discharged": "20",
+        "state": "Andhra Pradesh",
+        "total": "50",
+      },
+      "discharged": "18398",
+      "state": "Andhra Pradesh",
+      "total": "35501",
+    },
+  },
+  "7192020": Object {
+    "Andaman and Nicobar Islands": Object {
+      "active": "126",
+      "deceased": "7",
+      "delta": Object {
+        "active": "30",
+        "deceased": "2",
+        "discharged": "10",
+        "state": "Andaman and Nicobar Islands",
+        "total": "25",
+      },
+      "discharged": "160",
+      "state": "Andaman and Nicobar Islands",
+      "total": "251",
+    },
+    "Andhra Pradesh": Object {
+      "active": "16701",
+      "deceased": "459",
+      "delta": Object {
+        "active": "30",
+        "deceased": "2",
+        "discharged": "10",
+        "state": "Andhra Pradesh",
+        "total": "25",
+      },
+      "discharged": "18408",
+      "state": "Andhra Pradesh",
+      "total": "35526",
+    },
+  },
+}
+`;
+
+exports[`Processes input correctly Appends statsObj for the next day when previous day has no delta 1`] = `
+Object {
+  "7172020": Object {
+    "Andaman and Nicobar Islands": Object {
+      "active": "46",
+      "deceased": "0",
+      "discharged": "130",
+      "state": "Andaman and Nicobar Islands",
+      "total": "176",
+    },
+    "Andhra Pradesh": Object {
+      "active": "16621",
+      "deceased": "452",
+      "discharged": "18378",
+      "state": "Andhra Pradesh",
+      "total": "35451",
+    },
+  },
+  "7182020": Object {
+    "Andaman and Nicobar Islands": Object {
+      "active": "96",
+      "deceased": "5",
+      "delta": Object {
+        "active": "50",
+        "deceased": "5",
+        "discharged": "20",
+        "state": "Andaman and Nicobar Islands",
+        "total": "50",
+      },
+      "discharged": "150",
+      "state": "Andaman and Nicobar Islands",
+      "total": "226",
+    },
+    "Andhra Pradesh": Object {
+      "active": "16671",
+      "deceased": "457",
+      "delta": Object {
+        "active": "50",
+        "deceased": "5",
+        "discharged": "20",
+        "state": "Andhra Pradesh",
+        "total": "50",
+      },
+      "discharged": "18398",
+      "state": "Andhra Pradesh",
+      "total": "35501",
+    },
+  },
+}
+`;
+
+exports[`Processes input correctly Stores correctly for the first time 1`] = `
+Object {
+  "7172020": Object {
+    "Andaman and Nicobar Islands": Object {
+      "active": "46",
+      "deceased": "0",
+      "discharged": "130",
+      "state": "Andaman and Nicobar Islands",
+      "total": "176",
+    },
+    "Andhra Pradesh": Object {
+      "active": "16621",
+      "deceased": "452",
+      "discharged": "18378",
+      "state": "Andhra Pradesh",
+      "total": "35451",
+    },
+  },
+}
+`;
