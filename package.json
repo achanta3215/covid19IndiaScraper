@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "./app.js",
+    "start": "./app.js; ./andhra_pradesh.js",
     "tsc": "tsc",
     "prettier": "prettier --write ."
   },

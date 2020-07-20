@@ -58,14 +58,12 @@ const getStatsKeyFromDate = (date) => {
 /** @param {import('./definitions').StateData[]} statesData
  * @param {Date} today
  * @param {import('./definitions').StatsObj} statsObj
+ * @param {import('./definitions').StateDataKey} key
  * @return {import('./definitions').StatsObj}
  */
-const transformStatesData = (statesData, today, statsObj) => {
+const transformStatesData = (statesData, today, statsObj, key = 'state') => {
   const yesterday = getYesterday(today);
-  const [normalizedStatesData, statesList] = simplyNormalize(
-    statesData,
-    'state',
-  );
+  const [normalizedStatesData, statesList] = simplyNormalize(statesData, key);
   const statsForYesterday = statsObj[getStatsKeyFromDate(yesterday)];
   if (!statsForYesterday) {
     return {

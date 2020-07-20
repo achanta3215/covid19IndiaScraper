@@ -1,0 +1,131 @@
+{
+  "7202020": {
+    "\n\n                 ": {
+      "active": "0",
+      "entityName": "\n\n                 "
+    },
+    " Total AP Cases": {
+      "active": "0",
+      "deceased": "696",
+      "discharged": "21664",
+      "entityName": " Total AP Cases",
+      "total": "50829"
+    },
+    "Ananthapur": {
+      "active": "0",
+      "deceased": "74",
+      "discharged": "3091",
+      "entityName": "Ananthapur",
+      "total": "5483"
+    },
+    "Chittoor": {
+      "active": "0",
+      "deceased": "51",
+      "discharged": "1580",
+      "entityName": "Chittoor",
+      "total": "4763"
+    },
+    "East Godavari": {
+      "active": "0",
+      "deceased": "65",
+      "discharged": "1279",
+      "entityName": "East Godavari",
+      "total": "7232"
+    },
+    "Guntur": {
+      "active": "0",
+      "deceased": "58",
+      "discharged": "2670",
+      "entityName": "Guntur",
+      "total": "5494"
+    },
+    "Kadapa": {
+      "active": "0",
+      "deceased": "26",
+      "discharged": "1445",
+      "entityName": "Kadapa",
+      "total": "2798"
+    },
+    "Krishna": {
+      "active": "0",
+      "deceased": "108",
+      "discharged": "2268",
+      "entityName": "Krishna",
+      "total": "3677"
+    },
+    "Kurnool": {
+      "active": "0",
+      "deceased": "126",
+      "discharged": "2754",
+      "entityName": "Kurnool",
+      "total": "6604"
+    },
+    "Name of the District": {
+      "active": "0",
+      "entityName": "Name of the District"
+    },
+    "Nellore": {
+      "active": "0",
+      "deceased": "21",
+      "discharged": "958",
+      "entityName": "Nellore",
+      "total": "2486"
+    },
+    "Other Countries": {
+      "active": "0",
+      "deceased": "0",
+      "discharged": "390",
+      "entityName": "Other Countries",
+      "total": "434"
+    },
+    "Other States": {
+      "active": "0",
+      "deceased": "0",
+      "discharged": "2174",
+      "entityName": "Other States",
+      "total": "2461"
+    },
+    "Prakasam": {
+      "active": "0",
+      "deceased": "34",
+      "discharged": "1300",
+      "entityName": "Prakasam",
+      "total": "2085"
+    },
+    "Srikakulam": {
+      "active": "0",
+      "deceased": "29",
+      "discharged": "1029",
+      "entityName": "Srikakulam",
+      "total": "2830"
+    },
+    "Total": {
+      "active": "0",
+      "deceased": "696",
+      "discharged": "24228",
+      "entityName": "Total",
+      "total": "53724"
+    },
+    "Visakhapatnam": {
+      "active": "0",
+      "deceased": "42",
+      "discharged": "1471",
+      "entityName": "Visakhapatnam",
+      "total": "2200"
+    },
+    "Vizianagaram": {
+      "active": "0",
+      "deceased": "18",
+      "discharged": "337",
+      "entityName": "Vizianagaram",
+      "total": "1486"
+    },
+    "West Godavari": {
+      "active": "0",
+      "deceased": "44",
+      "discharged": "1482",
+      "entityName": "West Godavari",
+      "total": "3691"
+    }
+  }
+}

@@ -1,10 +1,13 @@
 export interface StateData {
-  state: string;
+  state?: string;
   active: string;
   discharged: string;
   deceased: string;
   total: string;
+  entityName?: string;
 }
+
+export type StateDataKey = keyof StateData;
 
 export interface StateDataDelta extends StateData {
   delta?: StateData;
