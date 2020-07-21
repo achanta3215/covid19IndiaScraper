@@ -11,8 +11,8 @@ let statsObjData = {};
 let isStatsLoaded = false;
 
 const suffix = 'andhra_pradesh';
-const covidStatsDir = './covidScrapper';
-const covidStatsFile = `${covidStatsDir}/${suffix}/covidStats.json`;
+const covidStatsDir = `./covidScrapper/${suffix}`;
+const covidStatsFile = `${covidStatsDir}/covidStats.json`;
 fs.readFile(
   covidStatsFile,
   { encoding: 'utf8', flag: 'a+' },
