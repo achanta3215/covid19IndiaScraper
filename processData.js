@@ -52,7 +52,13 @@ const getYesterday = (today) => {
  */
 
 const getStatsKeyFromDate = (date) => {
-  return date.toLocaleDateString().replace(/\//g, '');
+  return date
+    .toLocaleDateString('en-US', {
+      day: '2-digit',
+      month: '2-digit',
+      year: 'numeric',
+    })
+    .replace(/\//g, '');
 };
 
 /** @param {import('./definitions').StateData[]} statesData
