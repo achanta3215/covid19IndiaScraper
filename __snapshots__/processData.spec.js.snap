@@ -2,7 +2,7 @@
 
 exports[`Processes input correctly Appends statsObj for the next day when previous day has delta 1`] = `
 Object {
-  "7172020": Object {
+  "07172020": Object {
     "Andaman and Nicobar Islands": Object {
       "active": "46",
       "deceased": "0",
@@ -18,7 +18,7 @@ Object {
       "total": "35451",
     },
   },
-  "7182020": Object {
+  "07182020": Object {
     "Andaman and Nicobar Islands": Object {
       "active": "96",
       "deceased": "5",
@@ -48,7 +48,7 @@ Object {
       "total": "35501",
     },
   },
-  "7192020": Object {
+  "07192020": Object {
     "Andaman and Nicobar Islands": Object {
       "active": "126",
       "deceased": "7",
@@ -83,7 +83,7 @@ Object {
 
 exports[`Processes input correctly Appends statsObj for the next day when previous day has no delta 1`] = `
 Object {
-  "7172020": Object {
+  "07172020": Object {
     "Andaman and Nicobar Islands": Object {
       "active": "46",
       "deceased": "0",
@@ -99,7 +99,7 @@ Object {
       "total": "35451",
     },
   },
-  "7182020": Object {
+  "07182020": Object {
     "Andaman and Nicobar Islands": Object {
       "active": "96",
       "deceased": "5",
@@ -134,7 +134,7 @@ Object {
 
 exports[`Processes input correctly Stores correctly for the first time 1`] = `
 Object {
-  "7172020": Object {
+  "07172020": Object {
     "Andaman and Nicobar Islands": Object {
       "active": "46",
       "deceased": "0",
