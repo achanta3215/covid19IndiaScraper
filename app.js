@@ -61,6 +61,15 @@ const preparePageForTests = async (page) => {
           deceased: states.children[4] && states.children[4].innerHTML,
           total: states.children[1] && states.children[1].innerHTML,
         }))
+        .map((states) => {
+          const stateKeys = ['state', 'active', 'discharged', 'deceased', 'total'];
+          const returnData = (/** @type {{state: string, active: string, discharged: string, deceased: string, total: string }} */ (stateKeys.reduce((_sanitizedStates, stateKey) => ({
+            ..._sanitizedStates,
+            // @ts-ignore
+            [stateKey]: states[stateKey].replace(/,/g, ''),
+          }), {})));
+          return returnData;
+        })
         .filter((data) => Boolean(data.state));
     });
     const today = new Date();
