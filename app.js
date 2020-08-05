@@ -86,7 +86,9 @@ const preparePageForTests = async (page) => {
       JSON.stringify(newStatsObj),
       () => {},
     );
-  } catch(e){}
+  } catch(e){
+    console.log(e);
+  }
   finally {
     browser.close();
   }
