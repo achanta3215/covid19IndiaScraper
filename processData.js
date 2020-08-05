@@ -2,9 +2,10 @@
 /** @param { import('./definitions').Normalized<StatesData, 'state'>[0] } normalizedStatesData
  * @param {import('./definitions').NormaliedStatsForDay} statsForYesterday
  * @param {string} state
- * @return {import('./definitions').StateData}
+ * @return {import('./definitions').StateData | {}}
  */
 const getDelta = (normalizedStatesData, statsForYesterday, state) => {
+  if (!statsForYesterday.state) return {};
   return {
     state,
     active: String(

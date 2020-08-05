@@ -57,9 +57,8 @@ const preparePageForTests = async (page) => {
         .map((states) => ({
           state: states.children[1] && states.children[1].innerHTML,
           active: states.children[2] && states.children[2].innerHTML,
-          discharged: states.children[3] && states.children[3].innerHTML,
-          deceased: states.children[4] && states.children[4].innerHTML,
-          total: states.children[5] && states.children[5].innerHTML,
+          discharged: states.children[4] && states.children[4].innerHTML,
+          deceased: states.children[6] && states.children[6].innerHTML,
         }))
         .filter((data) => Boolean(data.state));
     });

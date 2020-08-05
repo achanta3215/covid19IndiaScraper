@@ -3,14 +3,14 @@ export interface StateData {
   active: string;
   discharged: string;
   deceased: string;
-  total: string;
+  total?: string;
   entityName?: string;
 }
 
 export type StateDataKey = keyof StateData;
 
 export interface StateDataDelta extends StateData {
-  delta?: StateData;
+  delta?: StateData | {};
 }
 
 export interface NormaliedStatsForDay {
