@@ -48,17 +48,18 @@ const preparePageForTests = async (page) => {
   try {
     const page = await browser.newPage();
     await preparePageForTests(page);
-    await page.goto('https://www.mohfw.gov.in/');
-    await page.waitForSelector('#state-data tbody tr');
+    await page.goto('https://www.mygov.in/covid-19');
+    await page.waitForSelector('#state-covid-data tr');
     const statesData = await page.evaluate(async () => {
-      const statesQuery = document.querySelectorAll('#state-data tbody tr');
+      const statesQuery = document.querySelectorAll('#state-covid-data tr');
       console.log(Array.from(statesQuery));
       return Array.from(statesQuery)
         .map((states) => ({
-          state: states.children[1] && states.children[1].innerHTML,
+          state: states.children[0] && states.children[0].innerHTML,
           active: states.children[2] && states.children[2].innerHTML,
-          discharged: states.children[4] && states.children[4].innerHTML,
-          deceased: states.children[6] && states.children[6].innerHTML,
+          discharged: states.children[3] && states.children[3].innerHTML,
+          deceased: states.children[4] && states.children[4].innerHTML,
+          total: states.children[1] && states.children[1].innerHTML,
         }))
         .filter((data) => Boolean(data.state));
     });
