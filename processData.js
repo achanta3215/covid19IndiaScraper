@@ -5,7 +5,7 @@
  * @return {import('./definitions').StateData | {}}
  */
 const getDelta = (normalizedStatesData, statsForYesterday, state) => {
-  if (!statsForYesterday.state) return {};
+  if (!statsForYesterday[state]) return {};
   return {
     state,
     active: String(
