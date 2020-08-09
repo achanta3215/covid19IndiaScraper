@@ -51,6 +51,8 @@ const preparePageForTests = async (page) => {
     await page.goto('https://www.mygov.in/covid-19');
     await page.waitForSelector('#state-covid-data tr');
     const statesData = await page.evaluate(async () => {
+      document.getElementById('statewise-data').click();
+      document.getElementById('btn-load-more').click();
       const statesQuery = document.querySelectorAll('#state-covid-data tr');
       console.log(Array.from(statesQuery));
       return Array.from(statesQuery)
