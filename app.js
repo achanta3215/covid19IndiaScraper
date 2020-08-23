@@ -49,19 +49,31 @@ const preparePageForTests = async (page) => {
     const page = await browser.newPage();
     await preparePageForTests(page);
     await page.goto('https://www.mygov.in/covid-19');
-    await page.waitForSelector('#state-covid-data tr');
+    await page.waitForSelector('#_indiatable tr');
     const statesData = await page.evaluate(async () => {
       document.getElementById('statewise-data').click();
-      document.getElementById('btn-load-more').click();
-      const statesQuery = document.querySelectorAll('#state-covid-data tr');
+      (/** @type {HTMLElement} */  (document.getElementById('statewise-data')
+        .getElementsByClassName('plus_icon')[0])).click();
+      /**
+      * @param {Element} stateFieldElement
+      */
+      const getFieldValue = (stateFieldElement) => {
+        const fieldContent = stateFieldElement.querySelector('p')
+          && stateFieldElement.querySelector('p').innerHTML;
+        if (!fieldContent) return '';
+        const angularBraceIndex = fieldContent.indexOf("<");
+        const indexUpto = angularBraceIndex === -1 ? undefined : angularBraceIndex;
+        return fieldContent.substr(0, indexUpto);
+      };
+      const statesQuery = document.querySelectorAll('#_indiatable tr');
       console.log(Array.from(statesQuery));
       return Array.from(statesQuery)
         .map((states) => ({
           state: states.children[0] && states.children[0].innerHTML,
-          active: states.children[2] && states.children[2].innerHTML,
-          discharged: states.children[3] && states.children[3].innerHTML,
-          deceased: states.children[4] && states.children[4].innerHTML,
-          total: states.children[1] && states.children[1].innerHTML,
+          active: getFieldValue(states.children[2]),
+          discharged: getFieldValue(states.children[3]),
+          deceased: getFieldValue(states.children[4]),
+          total: getFieldValue(states.children[1]),
         }))
         .map((states) => {
           const stateKeys = ['state', 'active', 'discharged', 'deceased', 'total'];
